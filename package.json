@@ -1,0 +1,24 @@
+{
+    "name": "slipmon",
+    "description": "SLIP (Serial Line Internet Protocol) Monitor",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "slipmon": "./index.js"
+    },
+    "dependencies": {
+        "chalk": "1.x",
+        "cli-table": "git+https://github.com/Automattic/cli-table.git",
+        "co": "4.x",
+        "figlet": "1.x",
+        "inquirer": "2.x",
+        "lodash": "4.x",
+        "log-symbols": "1.x",
+        "numeral": "2.x",
+        "serialport": "4.x",
+        "yargs": "6.x"
+    }
+}
