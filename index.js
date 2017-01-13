@@ -38,7 +38,7 @@ yargs
 
 let queryArray = [];
 
-if (yargs.argv.query !== 'undefined') {
+if (typeof yargs.argv.query !== 'undefined') {
     for (let i = 0; i < yargs.argv.query.length - 1; i += 2) {
         queryArray.push(('00' + parseInt(yargs.argv.query.substr(i, 2), 16).toString(16)).substr(-2).toUpperCase());
     }
@@ -49,7 +49,7 @@ let queryTarget = queryArray.length
 
 console.log(queryTarget);
 
-let port = new SerialPort(yargs.argv.port, {baudRate: 115200});
+let port = new SerialPort(yargs.argv.port, {baudRate: yargs.argv.baudRate});
 
 port.on('open', function() {
     console.log('port opened');
@@ -98,7 +98,7 @@ function printPacket(packet, queryTarget) {
                     packet[i] = chalk.bold('DB');
 
                 } else {
-                    packet[i] = chalk.red('ERROR:' + line[i]);
+                    packet[i] = chalk.red('ERROR:' + packet[i]);
 
                 }
             }
@@ -114,7 +114,6 @@ function printPacket(packet, queryTarget) {
                 packet[i] = chalk.red(packet[i]);
             }
         }
-
-        console.log(packet.join(' '));
     }
+    console.log(packet.join(' '));
 }
