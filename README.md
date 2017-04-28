@@ -1,6 +1,6 @@
 # slipmon
 
-<code>
+<pre>
     ____    _       ___   ____    __  __    ___    _   _
    / ___|  | |     |_ _| |  _ \  |  \/  |  / _ \  | \ | |
    \___ \  | |      | |  | |_) | | |\/| | | | | | |  \| |
@@ -16,4 +16,4 @@ Options:
   --query, -q     Highlight certain byte sequences, e.g. A1B2  [string]
   --raw, -r       Display raw (uncolorized) output  [boolean]
   --help          Show help  [boolean]
-</code>
+</pre>
