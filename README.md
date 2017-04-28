@@ -8,7 +8,7 @@
    |____/  |_____| |___| |_|     |_|  |_|  \___/  |_| \_|
                                                           (1.0.0)
 
-  Usage: slipmon <command>
+  Usage: slipmon <code><command></code>
 
 Options:
   --port, -p      Serial port, e.g. COM3 or /dev/tty.usbserial  [string] [required]
