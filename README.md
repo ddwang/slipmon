@@ -8,7 +8,7 @@
    |____/  |_____| |___| |_|     |_|  |_|  \___/  |_| \_|
                                                           (1.0.0)
 
-  Usage: C:\Users\ddwang\AppData\Roaming\npm\node_modules\slipmon\index.js <command>
+  Usage: slipmon <command>
 
 Options:
   --port, -p      Serial port, e.g. COM3 or /dev/tty.usbserial  [string] [required]
