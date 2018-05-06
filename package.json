@@ -11,9 +11,9 @@
 		"sliproxy": "./proxy.js"
 	},
 	"dependencies": {
-		"chalk": "1.x",
+		"chalk": "2.x",
 		"figlet": "1.x",
-		"serialport": "4.x",
-		"yargs": "7.x"
+		"serialport": "6.x",
+		"yargs": "11.x"
 	}
 }
