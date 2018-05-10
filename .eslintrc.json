@@ -1,11 +1,12 @@
-module.exports = {
-	"parserOptions": {
-		"ecmaVersion": "2015"
-	},
+{
 	"env": {
+		"es6": true,
 		"node": true
 	},
 	"extends": "eslint:recommended",
+	"parserOptions": {
+		"sourceType": "module"
+	},
 	"rules": {
 		"no-console": 0,
 		"indent": [
@@ -14,7 +15,7 @@ module.exports = {
 		],
 		"linebreak-style": [
 			"error",
-			"windows"
+			"unix"
 		],
 		"quotes": [
 			"error",
@@ -25,4 +26,4 @@ module.exports = {
 			"always"
 		]
 	}
-};
+}

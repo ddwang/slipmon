@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 
 const figlet = require('figlet');
@@ -33,8 +34,8 @@ let is_printable = true;
 
 exports.command = 'proxy';
 exports.desc = false;
-exports.builder = function(yargs) {
-	return
+exports.builder = function() {
+	return;
 };
 exports.handler = (argv) => {
 	let port = new SerialPort(argv.port, {
