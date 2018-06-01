@@ -10,9 +10,15 @@ const chalk = require('chalk');
 
 yargs
 	.strict()
-	.option('port', {
-		alias: 'p',
-		describe: 'Serial port, e.g. COM3 or /dev/tty.usbserial',
+	.option('port X', {
+		alias: 'x',
+		describe: 'Y Serial port, e.g. COM3 or /dev/tty.usbserial',
+		required: true,
+		type: 'string'
+	})
+	.option('port Y', {
+		alias: 'y',
+		describe: 'Y Serial port, e.g. COM4 or /dev/tty.usbserial',
 		required: true,
 		type: 'string'
 	})

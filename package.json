@@ -13,6 +13,7 @@
 	"dependencies": {
 		"chalk": "2.x",
 		"figlet": "1.x",
+		"npm": "^6.0.1",
 		"serialport": "6.x",
 		"yargs": "11.x"
 	}
